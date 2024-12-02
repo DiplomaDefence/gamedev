@@ -189,7 +189,7 @@ Feedback and suggestions are welcome for:
 - Enhancing transaction workflows.
 - Expanding testing and security measures.
 
-Please submit feedback via GitHub issues or email us at [email@example.com].
+Please submit feedback via GitHub issues or email us at [syrymzhakypbekov@gmail.com].
 
 ---
 
