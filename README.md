@@ -1,5 +1,7 @@
 # Development of a Blockchain-Based Gaming System
 
+> # [MATERIALS](https://teams.microsoft.com/l/channel/19%3AECT54IA4TmgqSbAffAHFYD1LwD62dfpjiqANrDoz0oo1%40thread.tacv2/General?groupId=05e2e23d-e42a-4cb5-a5bf-b167ab0e8387)
+
 ## Overview
 
 This project, hosted at [https://github.com/DiplomaDefence/gamedev/](https://github.com/DiplomaDefence/gamedev/), is being developed as a **Diploma Project** by the following students:
