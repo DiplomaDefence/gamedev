@@ -1,18 +1,18 @@
 {
   "$GMSprite":"",
-  "%Name":"spr_robotlegs",
+  "%Name":"spr_robot_legs0",
   "bboxMode":0,
   "bbox_bottom":63,
-  "bbox_left":15,
-  "bbox_right":52,
-  "bbox_top":40,
+  "bbox_left":13,
+  "bbox_right":51,
+  "bbox_top":38,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"7fc5b0b0-b7e5-45bc-ab5e-c1ee3c002cfb","name":"7fc5b0b0-b7e5-45bc-ab5e-c1ee3c002cfb","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"d1ed0c5c-f35a-4708-9846-5a0466b563be","name":"d1ed0c5c-f35a-4708-9846-5a0466b563be","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -21,7 +21,7 @@
   "layers":[
     {"$GMImageLayer":"","%Name":"726fff99-6dd2-4d77-808b-488da2ca03d0","blendMode":0,"displayName":"default","isLocked":false,"name":"726fff99-6dd2-4d77-808b-488da2ca03d0","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"spr_robotlegs",
+  "name":"spr_robot_legs0",
   "nineSlice":null,
   "origin":7,
   "parent":{
@@ -33,7 +33,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"",
-    "%Name":"spr_robotlegs",
+    "%Name":"spr_robot_legs0",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -57,9 +57,9 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"spr_robotlegs",
+    "name":"spr_robot_legs0",
     "playback":1,
-    "playbackSpeed":30.0,
+    "playbackSpeed":10.0,
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"7fc5b0b0-b7e5-45bc-ab5e-c1ee3c002cfb","path":"sprites/spr_robotlegs/spr_robotlegs.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"a6d96023-b7a2-4117-95f0-b6cb47fd6731","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"d1ed0c5c-f35a-4708-9846-5a0466b563be","path":"sprites/spr_robot_legs0/spr_robot_legs0.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"d41158c7-b5a9-4195-aaa0-f44dbbdd2f17","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

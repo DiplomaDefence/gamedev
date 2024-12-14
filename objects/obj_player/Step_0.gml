@@ -49,8 +49,54 @@ if !keyboard_check(ord("D")) and !keyboard_check(ord("A")) and grounded{
 		h_speed -= 0.05
 	}
 }
-
-
+if mouse_x >= x {
+	body_angle = point_direction(x,y,mouse_x,mouse_y);
+	body_dir = 1;
+	
+	if body_angle > 15 && body_angle < 180{
+		body_angle = 15;	
+	}
+	
+	if body_angle < 345 && body_angle > 180{
+		body_angle = 345;	
+	}
+	
+	head_angle = point_direction(x,y,mouse_x,mouse_y);
+	
+	if head_angle > 35 && head_angle < 180{
+		head_angle = 35;	
+	}
+	
+	if head_angle < 325 && head_angle > 180{
+		head_angle = 325;	
+	}
+	
+	arm_angle = point_direction(x,y,mouse_x,mouse_y);
+	
+} else {
+	body_angle = point_direction(x,y,mouse_x,mouse_y+4)+180;
+	body_dir = -1;
+	
+	if body_angle > 375{
+		body_angle = 375;	
+	}
+	
+	if body_angle < 345{
+		body_angle = 345;	
+	}
+	
+	head_angle = point_direction(x,y,mouse_x,mouse_y)+180;
+	
+	if body_angle > 395{
+		body_angle = 395;	
+	}
+	
+	if body_angle < 325{
+		body_angle = 325;	
+	}
+	
+	arm_angle = point_direction(x,y,mouse_x,mouse_y)+180;
+}
 
 
 if !place_meeting(x+3*sign(h_speed),y,obj_solid){
