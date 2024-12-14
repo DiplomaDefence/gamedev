@@ -68,6 +68,7 @@
           2,0,1,-13,-2147483648,1,15,-15,-2147483648,1,15,-10,-2147483648,4,268435473,268435472,536870928,536870929,
           -40,-2147483648,1,0,-15,1,-15,-2147483648,-11,1,2,536870928,536870929,-384,-2147483648,
         ],"TileDataFormat":1,},"tilesetId":{"name":"tiles0","path":"tilesets/tiles0/tiles0.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
+    {"$GMRBackgroundLayer":"","%Name":"Backgrounds_1","animationFPS":15.0,"animationSpeedType":0,"colour":4279769112,"depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Backgrounds_1","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
   "name":"Room1",
   "parent":{
