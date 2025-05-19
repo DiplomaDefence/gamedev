@@ -49,6 +49,15 @@ if !keyboard_check(ord("D")) and !keyboard_check(ord("A")) and grounded{
 		h_speed -= 0.05
 	}
 }
+
+if abs(round(h_speed)) != 0 and grounded {
+    if leg_frame < 10 {
+        leg_frame += 0.25;
+    }else {
+        leg_frame = 0
+    }
+}
+
 if mouse_x >= x {
 	body_angle = point_direction(x,y,mouse_x,mouse_y);
 	body_dir = 1;
@@ -87,12 +96,12 @@ if mouse_x >= x {
 	
 	head_angle = point_direction(x,y,mouse_x,mouse_y)+180;
 	
-	if body_angle > 395{
-		body_angle = 395;	
+	if head_angle > 395{
+		head_angle = 395;	
 	}
 	
-	if body_angle < 325{
-		body_angle = 325;	
+	if head_angle < 325{
+		head_angle = 325;	
 	}
 	
 	arm_angle = point_direction(x,y,mouse_x,mouse_y)+180;
