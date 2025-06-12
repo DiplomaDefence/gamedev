@@ -14,14 +14,19 @@ function checkend(posx,posy,angleoffset){
 
 function scr_createrooms(){
     
-    if place_meeting(x,y,obj_rangenend){
+    if place_meeting(x,y,obj_rangenend) or global.rangen_size <= 0{
         type = 1;
         deadend = true;
         exit;
     }
     
     randomize();
-    var chance = irandom_range(0,9);
+    var chance = choose(0, 1, 2, 3, 4, 5, 6, 7, 8, 9);
+    
+    if global.rangen_size <= 0 {
+        type = 1;
+    }
+    //var chance = irandom_range(0,9);
         show_debug_message(chance)
         if chance <= 2 {
             type = 0;

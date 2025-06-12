@@ -1,1 +1,1 @@
-draw_text(x,y,global.rangen_size)
+show_debug_message(global.rangen_size)

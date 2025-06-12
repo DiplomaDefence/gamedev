@@ -19,7 +19,7 @@ if !created {
     
     } else if !check_side(frontposx,frontposy) and check_side(leftposx,leftposy) and check_side(rightposx,rightposy) {
         type = 0;
-        if global.rangen_size > 0{
+        if global.rangen_size >= 0{
             with instance_create_depth(frontposx,frontposy,-1,obj_rangen_dummy){
                 image_xscale = 18;
                 image_yscale = 18;
@@ -47,4 +47,12 @@ if !created {
         type = 1;
     }
     created = true;
+} else {
+    if (image_angle >= 360){
+         image_angle -= 360;
+    }
+    
+    if (image_angle < 0){
+         image_angle += 360;
+    }
 }
