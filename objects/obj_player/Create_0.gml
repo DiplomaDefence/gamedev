@@ -2,6 +2,7 @@ h_speed = 0;
 vspeed = 0;
 grounded = false;
 
+
 gun_cooldown = 0;
 platform = true;
 

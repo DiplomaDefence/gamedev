@@ -1,0 +1,1 @@
+move_points = 60;

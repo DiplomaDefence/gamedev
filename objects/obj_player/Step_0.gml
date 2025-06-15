@@ -17,7 +17,7 @@ if mouse_check_button(mb_left){
             direction = point_direction(other.arm_x,other.arm_y,mouse_x,mouse_y);
             image_angle = direction
         }
-        gun_cooldown = 10 - global.shooting_speed;
+        gun_cooldown = 10 + 10 - 10*global.shooting_speed;
         recoil = 4;
     }
     
@@ -87,6 +87,7 @@ if keyboard_check(ord("A")) and (!place_meeting(x-1,y,obj_solid) or !place_meeti
 	
 	if keyboard_check_pressed(vk_space) and grounded and !place_meeting(x,y-4,obj_ladder){
 		vspeed -= 6;
+        audio_play_sound(snd_jump,1,false)
 	}
 	
 if !keyboard_check(ord("D")) and !keyboard_check(ord("A")) and grounded{
@@ -103,6 +104,10 @@ if !keyboard_check(ord("D")) and !keyboard_check(ord("A")) and grounded{
 	}
 }
 
+
+if keyboard_check_pressed(vk_up){
+    global.shooting_speed += 0.1;
+}
 
 platform = !keyboard_check(ord("S"));
 
@@ -167,6 +172,11 @@ if mouse_x >= x {
 	arm_angle = point_direction(x,y,mouse_x,mouse_y)+180;
 }
 
+if place_meeting(x,y,obj_enemybullet){
+    var bulletid = instance_place(x,y,obj_enemybullet);
+    global.hp -= bulletid.damage;
+    instance_destroy(bulletid);
+}
 
 if !place_meeting(x+3*sign(h_speed),y,obj_solid){
 	x += h_speed;

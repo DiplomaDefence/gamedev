@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_heavy_step",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":2,
+  "conversionMode":0,
+  "duration":1.2870748,
+  "name":"snd_heavy_step",
+  "parent":{
+    "name":"Sounds",
+    "path":"folders/Sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_heavy_step.wav",
+  "type":1,
+  "volume":0.54,
+}

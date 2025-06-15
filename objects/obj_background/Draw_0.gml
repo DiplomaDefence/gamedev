@@ -1,1 +1,2 @@
 draw_sprite_tiled(spr_devbg,0,camera_get_view_x(view_camera[0])/4,camera_get_view_y(view_camera[0])/4);
+draw_sprite_tiled(spr_devbg2,0,camera_get_view_x(view_camera[0])/6,camera_get_view_y(view_camera[0])/6);

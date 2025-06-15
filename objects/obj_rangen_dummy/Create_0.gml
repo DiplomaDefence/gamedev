@@ -18,7 +18,6 @@ if instance_number(obj_rangen_dummy)<= 1 {
     y = choose(1296, 1584, 1872, 2160, 2448, 2736, 3024, 3312)
     image_angle = choose(0,90,180,270);
     type = irandom_range(0,5)
-    instance_create_depth(x,y,-1,obj_player)
 }
 
 function check_side(xpos,ypos){
