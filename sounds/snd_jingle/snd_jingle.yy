@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":2,
   "conversionMode":0,
-  "duration":0.045510203,
+  "duration":2.24,
   "name":"snd_jingle",
   "parent":{
     "name":"Sounds",

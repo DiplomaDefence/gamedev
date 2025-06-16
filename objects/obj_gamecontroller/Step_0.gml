@@ -1,3 +1,8 @@
+if global.start and global.enemycount <= 0 {
+    global.win = true;
+}
+
+
 if keyboard_check_pressed(vk_escape){
     if !global.pause {
         global.pause = true;

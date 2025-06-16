@@ -1,3 +1,7 @@
+if global.hp <= 0 {
+    room_goto(Room_menu);
+}
+
 if place_meeting(x,y+4,obj_solid){
 	gravity = 0;
 	if !place_meeting(x,y+1,obj_solid){

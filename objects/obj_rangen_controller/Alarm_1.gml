@@ -2,6 +2,7 @@ with obj_rangen_dummy{
     
     with instance_create_depth(x,y,depth,obj_rangen_room){
         image_index = other.type;
+        global.enemycount+= 1;
         instance_create_depth(x,y,-2,obj_enemy_drone)
         
         switch other.image_angle {
@@ -11,21 +12,25 @@ with obj_rangen_dummy{
                 
                 switch other.type {
                     case 0: { 
-                        create_entrance_door(x,y+96); 
+                        create_entrance_door(x,y+96);
+                        create_exit_door(x,y+96);
                         break;
                     }
                     case 1: { 
-                        create_entrance_door(x+16,y+32); 
+                        create_entrance_door(x+16,y+32);
+                        create_exit_door(x+16,y+32); 
                         break 
                     }
                     case 2: { 
                         create_entrance_door(x,y+32); 
+                        create_exit_door(x,y+32); 
                         instance_create_depth(x+32,y-32,depth-1,obj_platform)
                         instance_create_depth(x-48,y-80,depth-1,obj_platform)
                         break 
                     }
                     case 3: { 
                         create_entrance_door(x-96,y+48); 
+                        create_exit_door(x-96,y+48); 
                         instance_create_depth(x+32,y,depth-1,obj_platform)
                         instance_create_depth(x-32,y+64,depth-1,obj_platform)
                         instance_create_depth(x-80,y+64,depth-1,obj_platform)
@@ -41,6 +46,8 @@ with obj_rangen_dummy{
                         break 
                     }
                     case 5: { 
+                        create_entrance_door(x,y+96);
+                        create_exit_door(x,y+96);
                         instance_create_depth(x-96,y+112,depth-1,obj_platform)
                         instance_create_depth(x-48,y+112,depth-1,obj_platform)
                         instance_create_depth(x,y+112,depth-1,obj_platform)
@@ -48,6 +55,8 @@ with obj_rangen_dummy{
                         break 
                     }
                     case 6: { 
+                        create_entrance_door(x,y+16); 
+                        create_exit_door(x,y+16);
                         instance_create_depth(x-48,y-98,depth-1,obj_platform)
                         instance_create_depth(x,y-98,depth-1,obj_platform)
                         instance_create_depth(x-96,y-32,depth-1,obj_platform)
@@ -130,6 +139,7 @@ with obj_rangen_dummy{
                 switch other.type {
                     case 0: { 
                         create_entrance_door(x,y+96); 
+                        create_exit_door(x,y+96); 
                         break ;
                     }
                     case 1: { 
@@ -156,6 +166,8 @@ with obj_rangen_dummy{
                         break 
                     }
                     case 5: { 
+                        create_entrance_door(x,y+16); 
+                        create_exit_door(x,y+16);
                         instance_create_depth(x-48,y-96,depth-1,obj_platform)
                         instance_create_depth(x,y-96,depth-1,obj_platform)
                         instance_create_depth(x-96,y-32,depth-1,obj_platform)
@@ -163,6 +175,8 @@ with obj_rangen_dummy{
                         break 
                     }
                     case 6: { 
+                        create_entrance_door(x,y+96);
+                        create_exit_door(x,y+96);
                         instance_create_depth(x-96,y+112,depth-1,obj_platform)
                         instance_create_depth(x-48,y+112,depth-1,obj_platform)
                         instance_create_depth(x,y+112,depth-1,obj_platform)

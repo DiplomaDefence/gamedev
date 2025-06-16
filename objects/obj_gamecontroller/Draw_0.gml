@@ -11,13 +11,18 @@ if !global.start{
 }
 
 if !global.pause{
-    draw_set_color(c_white)
-    draw_sprite(spr_HUD,0,viewx,viewy);
-    draw_set_font(global.pixfont)
-    draw_text(viewx+5,viewy+17,global.hp)
-    draw_text(viewx+38,viewy+17,global.max_hp)
-    
-    draw_sprite(spr_crosshair,0,mouse_x,mouse_y);
+    if global.start {
+        draw_set_color(c_white)
+        draw_sprite(spr_HUD,0,viewx,viewy);
+        draw_set_font(global.pixfont)
+        draw_text(viewx+5,viewy+17,global.hp)
+        draw_text(viewx+38,viewy+17,global.max_hp)
+        draw_sprite_ext(spr_healthbar,0,viewx+67,viewy+8,(global.hp/global.max_hp),1,0,c_white,1);
+        
+        draw_text(viewx+222,viewy+1,global.enemycount)
+        
+        draw_sprite(spr_crosshair,0,mouse_x,mouse_y);
+    }
 } else {
     draw_sprite(spr_hardman_pause,0,viewx,viewy);
     draw_sprite_ext(spr_upgrade_window,0,viewx_center,viewy_center,2,12,0,c_white,1);

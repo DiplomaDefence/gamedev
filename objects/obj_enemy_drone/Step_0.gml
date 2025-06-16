@@ -43,6 +43,7 @@ if teleport_cd > 0 and distance_to_object(target) < 256{
 
 
 if hp <= 0 {
+    global.enemycount -= 1;
     instance_destroy()
 }
 
