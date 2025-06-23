@@ -18,7 +18,9 @@ if place_meeting(x,y,obj_playerbullet){
             text = other.passed_damage;
         }
         hitframe = 5;
-        //instance_destroy(last_bullet)
+        if !global.pass_through{
+            instance_destroy(last_bullet)
+        }
     }
 }
 

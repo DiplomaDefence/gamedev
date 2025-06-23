@@ -1,0 +1,1 @@
+hover = collision_circle(mouse_x, mouse_y, 1, self, true, false);

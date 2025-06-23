@@ -42,6 +42,17 @@ armspr = spr_robotarm_0
 legspr = spr_robot_legs_0
 gunspr = spr_robotgun_0
 
+switch global.head{
+    case 0: 
+    headspr = spr_robothead_0; break;
+    case 1: 
+    headspr = spr_robothead_1; break;
+    case 2: 
+    headspr = spr_robothead_2; break;
+    case 3: 
+    headspr = spr_robothead_3; break;
+}
+
 switch global.torso{
     case 0:
        torsospr = spr_robotbody_0; break;

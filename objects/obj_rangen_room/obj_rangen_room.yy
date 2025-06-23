@@ -9,8 +9,8 @@
   "name":"obj_rangen_room",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"rangen",
+    "path":"folders/Objects/rangen.yy",
   },
   "parentObjectId":{
     "name":"obj_solid",

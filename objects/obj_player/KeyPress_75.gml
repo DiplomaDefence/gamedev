@@ -1,0 +1,1 @@
+global.enemycount = 0;

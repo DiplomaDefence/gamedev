@@ -25,5 +25,29 @@ if !global.pause{
     }
 } else {
     draw_sprite(spr_hardman_pause,0,viewx,viewy);
-    draw_sprite_ext(spr_upgrade_window,0,viewx_center,viewy_center,2,12,0,c_white,1);
+    
+    if !bonus_pick{
+        draw_sprite_ext(spr_upgrade_window,0,viewx_center,viewy_center,2,12,0,c_white,1);
+    } else {
+        
+        if !bonus1{
+            bonus1 = true;
+            instance_create_depth(viewx_center-128,viewy_center,depth-1,obj_bonus_card)
+        }
+        if !bonus2{
+            bonus2 = true;
+            instance_create_depth(viewx_center,viewy_center,depth-1,obj_bonus_card)
+        }
+        if !bonus3{
+            bonus3 = true;
+            instance_create_depth(viewx_center+128,viewy_center,depth-1,obj_bonus_card)
+        }
+        
+        if keyboard_check_pressed(vk_escape){
+            bonus_pick = false;
+            global.pause = false;
+            activate();
+            instance_destroy(obj_bonus_card);
+        }
+    }
 }

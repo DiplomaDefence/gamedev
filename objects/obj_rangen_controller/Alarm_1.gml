@@ -3,7 +3,7 @@ with obj_rangen_dummy{
     with instance_create_depth(x,y,depth,obj_rangen_room){
         image_index = other.type;
         global.enemycount+= 1;
-        instance_create_depth(x,y,-2,obj_enemy_drone)
+        instance_create_depth(x,y,-4,obj_enemy_drone)
         
         switch other.image_angle {
             

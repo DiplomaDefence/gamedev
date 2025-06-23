@@ -1,2 +1,2 @@
-global.firstroom = undefined;
-room_restart();
+//global.firstroom = undefined;
+//room_restart();

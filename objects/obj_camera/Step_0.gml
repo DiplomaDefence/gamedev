@@ -4,7 +4,9 @@ if instance_exists(obj_player){
 } else if instance_exists(obj_entrance_door){
     x = obj_entrance_door.x;
     y = obj_entrance_door.y;
-} else {
-    x = room_width/2;
-    y = room_height/2;
-}
+} 
+
+//else {
+    //x = room_width/2;
+    //y = room_height/2;
+//}

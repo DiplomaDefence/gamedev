@@ -12,8 +12,8 @@
   "name":"obj_rangen_controller",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"rangen",
+    "path":"folders/Objects/rangen.yy",
   },
   "parentObjectId":null,
   "persistent":false,

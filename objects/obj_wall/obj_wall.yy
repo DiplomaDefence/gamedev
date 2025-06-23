@@ -10,8 +10,8 @@
   "name":"obj_wall",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"rangen",
+    "path":"folders/Objects/rangen.yy",
   },
   "parentObjectId":{
     "name":"obj_solid",

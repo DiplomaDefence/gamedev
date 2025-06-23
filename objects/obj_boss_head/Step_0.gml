@@ -1,6 +1,6 @@
 if instance_exists(obj_boss_body){
-    x = obj_boss_body.x;
-    y = obj_boss_body.y-80
+    x = obj_boss_body.xprevious;
+    y = obj_boss_body.yprevious-80+irandom_range(-global.shake,global.shake);
 }
 
 if hitframe > 0 {

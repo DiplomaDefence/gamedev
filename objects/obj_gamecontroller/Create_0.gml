@@ -3,11 +3,34 @@ viewx = x;
 viewy = y;
 global.start = false;
 
+bonus_pick = false;
+bonus1 = false;
+bonus2 = false;
+bonus3 = false;
+
 viewx_center = x;
 viewy_center = y;
 global.enemycount = 0;
 global.max_enemycount = 0;
 global.win = false;
+
+function deactivate(){
+    instance_deactivate_all(true)
+    instance_activate_object(obj_camera)
+    instance_activate_object(obj_rangen_controller)
+        
+    instance_activate_object(obj_rangen_room)
+    instance_activate_object(obj_wall)
+    instance_activate_object(obj_platform)
+    instance_activate_object(obj_fakeoutline)
+        
+    instance_activate_object(obj_background)
+}
+
+function activate(){
+    instance_activate_all();
+    instance_destroy(obj_button);
+}
 
 global.shake = 0;
 

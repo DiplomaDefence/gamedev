@@ -6,8 +6,8 @@
   "name":"obj_rangenend",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"rangen",
+    "path":"folders/Objects/rangen.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -4,4 +4,4 @@ function game(){
     room_goto(Room_menu)
 }
 func = game;
-text = "start"
+text = "return"
